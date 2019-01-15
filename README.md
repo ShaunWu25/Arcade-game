@@ -7,9 +7,9 @@
 
 ## Instructions
 
-Arcade game project is one of the Udacity Front End Nonodegree program. This project utilizes Object-Oriented Javascript, Protitypal inheritance, Immediately-invoked function expressions(IIFE).
+Arcade game project is one of the Udacity Front End Nonodegree program. This project utilizes Object-Oriented Javascript, Prototypal inheritance, Immediately-invoked function expressions(IIFE).
 
-To get started, download the whole master floder, unzip it, and load the index.html fule(ctrl+o) in your browser.
+To get started, download the whole master folder, unzip it, and load the index.html file(ctrl+o) in your browser.
 
 ## How To Play
 

@@ -2,42 +2,4 @@ body {
     text-align: center;
 }
 
-.switch{
-    display: none;
-}
-
-.modal-background {
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-body {
-    position: relative;
-    width: 400px;
-    top: 50%;
-    left: 50%;
-    background: linear-gradient(160deg, #ff5252 0%, #949eff 100%);
-    transform: translate(-50%, -50%);
-}
-
-.modal-heading {
-    text-align: center;
-    padding: 1.5rem;
-}
-
-
-.modal-buttons{
-    display:flex;
-    justify-content: space-around;
-    padding: 4rem;
-}
-
-.modal-button{
-    width: 60px;
-    height: 30px;
-}
 

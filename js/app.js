@@ -33,9 +33,6 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
 
 // Player Class
 class Jumper{
@@ -50,23 +47,14 @@ class Jumper{
         this.y = this.startY;
         this.victory = false;
     }
-    // Properties
-    // x pos
-    // y pos
-    // Sprite image
-// Method
-    // Update position
-        // Check collision here
-            // Did player x and y collide with enemy?
-        // Check win here
-            // Did player x and y reach final tile?
+
     // Render
     render(){
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
         // Draw player sprite on current x and y cood position
     // Handle keyboard input
-        // Update player's x and y property accorrding to input
+    // Update player's x and y property accorrding to input
     handleInput(input){
         switch(input){
             case 'left':
@@ -126,9 +114,11 @@ class Jumper{
 const player = new Jumper();
 const killer_01 = new Enemy(0,0, 50);
 const killer_02 = new Enemy(0,80, 250);
+const killer_03 = new Enemy(0,160, 450);
+
 
 const allEnemies = []; 
-allEnemies.push(killer_01, killer_02);
+allEnemies.push(killer_01, killer_02, killer_03);
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.

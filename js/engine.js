@@ -24,9 +24,6 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
-        const modal = document.querySelector('.modal-background');
-        const replay = document.querySelector('.button');
-
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
@@ -69,28 +66,19 @@ var Engine = (function(global) {
         });
         */
 
-       document.querySelector('.modal-replay').addEventListener('click', resetGameForReplayButton);
         
         
         if(player.victory === true){
-            win.cancelAnimationFrame(requestID);
-            modal.classList.toggle('switch');
+            resetGame()
         }
-        else{
-            requestID = win.requestAnimationFrame(main);
-        }
-
-        function resetGameForReplayButton(){
-            resetGame();
-        }       
+              
         function resetGame(){
-            modal.classList.toggle("switch")
             player.reset();
-            player.victory = true;
-            win.requestAnimationFrame(main);
-
-        }
+            player.victory = false;
         
+        }
+
+        win.requestAnimationFrame(main);
     }
 
     /* This function does some initial setup that should only occur once,
